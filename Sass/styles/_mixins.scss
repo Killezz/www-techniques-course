@@ -1,0 +1,4 @@
+// Kuvien hehku efekti mixin
+@mixin card-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}

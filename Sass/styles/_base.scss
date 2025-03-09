@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+// Otsikon määritykset
+$header-text-color: #c4b860;
+$header-font-size: 30px;
+$header-larger-font-size: 40px;
+$header-bg-color: #000014;
+
+// Käytettävä fontti ja väri
+$font-family: "Poppins", sans-serif;
+$color: #cecece;
+$background-color: #000014;
+
+// Kuvien määritykset
+$card-title-color: black;
+$card-text-color: #383838;
+$card-bg-color: #c4b860;
+$card-shadow-x: 0px;
+$card-shadow-y: 0px;
+$card-shadow-blur: 15px;
+$card-shadow-color: #d97f00;
+
+// Try now painikkeen määritykset
+$try-button-text-color: #000000;
+$try-button-bg-color: #c4b860;
+$try-button-border-radius: 5px;
+$try-button-padding: 10px 20px;
+$try-button-hover-bg-color: #ffdd00;
+
+body {
+  color: $color;
+  background-color: $background-color;
+  font-family: $font-family;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuores</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div id="title"><a href="./">Vuores</a></div>
+        <nav>
+            <ul>
+                <li><a href="./taide">Taide</a></li>
+                <li><a href="./vuores-talo">Vuores-talo</a></li>
+                <li><a href="./jatehuolto">Jätteiden putkikeräys</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="./taide">Taide</a></li>
+                <li><a href="./vuores-talo">Vuores-talo</a></li>
+                <li><a href="./jatehuolto">Jätteiden putkikeräys</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <img src="./assets/images/vuores.jpg" alt="Vuores-talo" class="banner-img">
+        <h1 class="center">Vuores - pikkukaupunki luonnon kainalossa</h1>
+        <br>
+        <p>Ainutlaatuinen yhdistelmä uusimpia teknisiä ratkaisuja, laadukasta arkkitehtuuria, ekologisuutta, taidetta
+            luonnonläheisyyttä unohtamatta. Sitä kaikkea on Vuores, yksi Tampereen uusimmista kaupunginosista.</p>
+        <br>
+        <p>Vuoreksessa pidettiin asuntomessut vuonna 2012. Siitä lähtien kaupunginosa on rakentunut ja sen arvioidaan
+            valmistuvan vuonna 2025. Tällä hetkellä Vuoreksessa asuu noin 7400 asukasta.</p>
+        <br>
+        <div class="cards">
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./assets/images/kerrostalot.jpg" alt="Kerrostalot" class="card-img">
+                    <div class="container">
+                        <p>Asuintaloissa kiinnostava arkkitehtuuri yhdistyy moderniin talotekniikkaan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./assets/images/vuoreksen-puistokatu.jpg" alt="Vuoreksen puistokatu" class="card-img">
+                    <div class="container">
+                        <p>Vuoreksen Puistokatu on kaupunginosan sydän</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./assets/images/kavelyreitit.jpg" alt="Kävely- ja pyöräilyreitit" class="card-img">
+                    <div class="container">
+                        <p>Alueella panostetaan kävely- ja pyöräilyreitteihin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./assets/images/maisema.jpg" alt="Maisema" class="card-img">
+                    <div class="container">
+                        <p>Vuores on pienten järvien ja metsien ympäröimä</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

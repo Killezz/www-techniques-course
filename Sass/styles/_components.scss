@@ -1,0 +1,67 @@
+// Kuvakortin placeholder jota voidaan käyttää extend %card-shared ja lisätä tyyliä
+%card-shared {
+  // Haetaan _mixins.scss card-shadow
+  @include card-shadow(
+    base.$card-shadow-x,
+    base.$card-shadow-y,
+    base.$card-shadow-blur,
+    base.$card-shadow-color
+  );
+  background-color: base.$card-bg-color;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  transition: ease-in-out 0.5s;
+
+  // Määritetään kuvan leveydeksi 100% käytettävissä olevasta alueesta
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  // Määritetään väri muuttujasta ja siirretään textiä kuvasta hieman alemmaksi
+  h2 {
+    color: base.$card-title-color;
+    margin-top: 10px;
+  }
+
+  // Määritetään väri muuttujasta ja siirretään textiä otsikosta hieman alemmaksi
+  p {
+    color: base.$card-text-color;
+    margin-top: 10px;
+  }
+}
+
+// Käytetään Extend tuosta cart-shared placeholderista
+.card {
+  @extend %card-shared;
+}
+
+// Asetetaan teksti vasemmalle ja painike oikealle. Tuodaan värit muuttujista
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: base.$header-font-size;
+  padding: 10px;
+  background-color: base.$header-bg-color;
+  color: base.$header-text-color;
+}
+
+// Luodaan linkille painike joka vaihtaa väriä muutujien mukaan
+.try-button {
+  display: inline-block;
+  padding: base.$try-button-padding;
+  background-color: base.$try-button-bg-color;
+  color: base.$try-button-text-color;
+  border-radius: base.$try-button-border-radius;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    background-color: base.$try-button-hover-bg-color;
+  }
+}

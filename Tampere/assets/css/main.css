@@ -1,0 +1,120 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #31333B;
+    color: rgb(231, 231, 231);
+    font-family: "Poppins", sans-serif;
+
+}
+
+.title {
+    margin: 50px 0 50px 0;
+}
+
+.content {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.content p {
+    color: #cccccc;
+    font-size: large;
+}
+
+.banner-img {
+    /* Rounded corners for images */
+    border-radius: 100px 100px 0 0;
+    width: 100%;
+    margin-bottom: 50px
+}
+
+.rounded-bottom {
+    /* Rounded bottom corners for images */
+    border-radius: 0 0 100px 100px;
+    width: 100%;
+    margin-bottom: 50px
+}
+
+.row {
+    /* Row with image, text and shadow*/
+    background-color: #383b47;
+    width: 100%;
+    margin: 20px 0 60px 0;
+    box-shadow: 0px 0px 20px 15px #252525;
+}
+
+.row img {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.row h1 {
+    font-size: x-large;
+}
+
+.row .text {
+    padding: 20px;
+}
+
+.row .button {
+    /* Creates button on link elements */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(253, 253, 253);
+    background-color: #599A8C;
+    transition: 0.5s;
+}
+
+.row .button:hover {
+    transform: scale(1.05);
+}
+
+a {
+    /* Change link color and remove underline*/
+    color: #599A8C;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .row {
+        /* Display Image and text next to each other */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .row h1 {
+        /* Scale up font on desktop*/
+        font-size: xx-large;
+    }
+
+    .row picture {
+        /* Limit min and max width to 50% */
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    .row .text {
+        margin: 20px;
+    }
+
+}

@@ -1,0 +1,40 @@
+@use "base";
+@import "mixins";
+@import "components";
+
+// Rajataan maksimi leveydeksi 1200px ja contentin leveydeksi 90% käytettävissä olevasta ruudun alasta
+.content {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 700px) {
+  .content {
+    // Asetetaan 2 kuvaa vierekkäin käyttäen gridiä
+    .card-content {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-content: center;
+    }
+
+    // Muutetaan otsikkoa tarvittaessa isommaksi kun näyttökoko muuttuu
+    .header {
+      font-size: base.$header-larger-font-size;
+    }
+
+    // Suurennetaan elementtiä kun hiiri tuodaan elementin päälle
+    .card:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  // 3 kuvaa vierekkäin
+  .content {
+    .card-content {
+      grid-template-columns: repeat(3, 35%);
+    }
+  }
+}
